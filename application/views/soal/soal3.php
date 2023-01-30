@@ -11,25 +11,12 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($data_pegawai as $k => $pegawai) { ?>
-            <tr>
-                <td><?= ++$k ?></td>
-                <td><?= $pegawai->nama ?></td>
-                <td><?= $pegawai->email ?></td>
-                <td><?= $pegawai->no_hp ?></td>
-                <td><?= $pegawai->alamat ?></td>
-                <td>
-                    <button class="btn btn-warning">Detail</button>
-                    <button class="btn btn-primary">Edit</button>
-                    <button class="btn btn-danger">Hapus</button>
-                </td>
-            </tr>
-        <?php } ?>
+
     </tbody>
 </table>
 <script>
     var BASE_URL = '<?= base_url() ?>';
     $(document).ready(function() {
-        $('#datatable').DataTable();
+
     });
 </script>
