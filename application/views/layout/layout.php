@@ -53,7 +53,11 @@
 <body>
     <?= $navbar ?>
     <div class="container mt-5">
-        <h2><?= $page_title ?></h2>
+        <div class="d-flex justify-content-between">
+            <h2><?= $page_title ?></h2>
+            <img src="<?= base_url() . 'assets/images/jtech_logo.png' ?>" style="width: 100px;">
+        </div>
+
         <hr>
         <?= $content ?>
     </div>
